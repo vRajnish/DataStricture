@@ -1,0 +1,85 @@
+Linked List----> Used to Store Linear collection of Data same as Array but Advantage is that provide Dynamic allocation of data without any memory waste.
+
+Properties
+Elements are connected by Pointers.
+Arrays cannot be grow or shrink but Linked List can.
+Efficently use of Memory without any waste.
+Last ELement always point to NULL which signifies end of List.
+
+Disadvantage--->Access of Element is not in constant time as in Array is.
+
+Singly Linked List
+
+struct node
+{
+	int data;		//Data in node.
+	node *next;		//pointing to next node.
+}
+
+Basic operation that I will discuss
+
+1.	Traversing
+
+2.	Insertion
+	2.1	At Begining
+	2.2 At end of List
+	2.3	In middle or Kth Position
+
+3.	Deletion
+	3.1	At Begining
+	3.2	At end of List
+	3.3	From Middle or Kth node.
+
+Doubly Linked List-->Also called as two-way Linked List
+
+struct node
+{
+	int data;
+	node *next;
+	node *prev;
+}
+
+Advantage
+
+can move in either direction(left or right).
+Deletion is possible without any extra pointer.
+
+Disadvantage
+
+Need extra pointer (prev and next) more space.
+
+Basic operation that I will be discuss
+
+1. Traversing
+
+2. Insertion
+	2.1	Before Head
+	2.2	After Tail
+	2.3	At middle or kth position.
+
+3.	Deletion
+	3.1	First node
+	3.2	Last node
+	3.3 Intemediate node
+
+
+Circular Linked List-->	In Simple Linked and Doubly LinkedList Last pointer Always point to NULL;
+
+Circular Does not have End.
+
+struct node
+{
+	int data;
+	node *next;
+}
+
+Basic operation that I will Discuss.
+
+1.	Traversing
+2.	Insertion
+	2.1 At Front
+	2.2 At End
+3.	Deletion
+	3.1	From Front
+	3.2	From End
+
