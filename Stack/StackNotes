@@ -1,0 +1,64 @@
+
+Stack
+Data structure used for storing data.
+Insertion and Deletion are performed only at one end (Top);
+LIFO (Last In First Out)
+Recursion Used stack to maintain the flow of program. Each time a function is called a new block of stack is allocated and current execution is paused.
+
+Deletion from am empty stack is called underflow.
+Inserting in full stack is called overflow.
+
+Operation -->
+	Push
+	Pop
+	isEmpty
+	size
+	top
+
+Application
+
+1.	Balanced Paranthesis
+2.	Infix to Postfix conversion
+3.	Evaluation of Postfix expresion
+4.	Matching Tag in HTML.
+
+Simple array based Implementation and Dynamic array based Imlementation
+
+In Dynamic array based Implementation
+Two strategy--> Incremental and Doubling.
+
+1.Incremental
+	Each time we are increasing the size of array by one each time a stack is full.
+	It means that when a stack is full create a new array of size n+1 and copy all old elements to new and add new element at end of new array.
+	Ex. For n=1;	arr1[1]={1};
+			new array of size 2;										arr2[2]={};
+			copy all old elements and also add new element at the end.	arr2[2]={1,2};
+
+		For n=2;	arr1[2]={1,2};
+			new array of size 3;										arr2[3]={};
+			copy all old elements and also add new element at the end.	arr2[3]={1,2,3};
+
+		.
+		.
+		.
+		For n=n;
+
+		Complexity: 1+2+4+8+----+n=n(n+1)/2=square(n); Its too expensive.
+
+2.Doubling
+	Each time when the stack is full we are doubling its size.
+	In this we dont need to copy the element in new array. We are doubling the size of existing array.
+	For n=1;	arr1[]={1};
+				new size 2;										arr2[2]={1,2};
+
+	For n=2;	arr1[2]={1,2};
+				new size 4;										arr2[4]={1,2,3};
+
+	Complexity: 1+2+4+8+16+----+(n/4)+(n/2)+(n).
+				n(1+(1/2)+(1/4)+----+(1/n)+(2/n)+(4/n));
+				n(2)=2n=n;
+
+
+
+			
+
