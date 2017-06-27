@@ -1,0 +1,75 @@
+What is Tree?
+
+It is also a Data Structure similar to LinkedList ,Stack,Queue.
+But the diffrence is that Tree is hierarchical data structure in graphical form.
+
+Commont terms that are used in Tree are:
+
+Root-->	 				A node which has no parent. Special node.
+
+Edge-->	 				Link between Two nodes(Parent to child).
+
+Leaf Node-->			A node which has no child.
+
+Siblings-->				Nodes whose parent are same.
+
+Level of Tree-->		Set of all node at given depth. Like Root node is at level 0; Child of Root node 							will be in Level 1 and so on.
+
+Height or depth of Tree-->		Maximum height among all the nodes in tree, or max level of tree can 										determine height
+
+Depth of Node-->		Length of path from root node to that node in tree.
+
+Height of Node-->		Length of the path from that node to deepest node in tree.
+
+Binary Tree
+
+A tree which has Zero,One or Two child. Empty tree is also a binary tree.
+
+Types of Binary tree
+
+1.	Strict Binary tree-->	A binary tree is called strict binary tree when each node has exactly two 									children or zero children.
+
+2. Full Binary Tree-->		A binary tree is called Full Binary tree if each level has max node as it should 							 have. Number of node in each level can be determined by pow(2,l-1) where l >=1; 
+
+3. Complete Binary tree-->	In simple terms complete binary tree is if we start numbering from root node it 							should be in increasing order and without missing any number.Ex:
+
+								A (1) 							A(1)
+							   / \							   / \
+						   (2) B   D(3)					   (2)B   C(3)
+							 / \							 /    /
+					      (4)C   E(5)					 (3)C (4) D(5)
+
+					      Complete Binary Tree            In this tree 4 is missing so this is not complete 								Binary tree.
+
+Properties of Binary tree
+1.	Total No of nodes pow(2,h+1)-1 where h>=0;
+2.	Leaf node in Binary tree pow(2,h) where h>=0;
+
+How to represent tree
+
+struct tree
+{
+	int data;
+	tree *left;
+	tree *right;
+};
+
+Operation on tree
+1. Inserting an Element in tree.
+2. Deleting an Element in tree.
+3. Searching an Element.
+4. Traversing Tree.
+	4.1 PreOrder	R L R  (Root , Left , Right)
+	4.2 InOrder		L R R  (Left , Root , Right)
+	4.3 PostOrder	L R R  (Left , Right , Root)
+
+Application of Tree
+1. Expression tree used in compiler.
+3. Huffman coding used in compression.
+
+
+Important
+
+Whenever said not to use recursion in tree go for level order traversal it is best.
+If said with recursion divide tree in left and right subtree then think of logic.
+
