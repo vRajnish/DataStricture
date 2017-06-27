@@ -1,0 +1,32 @@
+
+Queue
+Data structure used for storing data.
+Its works with priciple of FIFO (First in First out);
+
+Insertion are done at one end called rear.
+Deletion are done at on end called front.
+
+Dequeueing an empty queue is called underflow.
+Enqueueing an element in full queue is called overflow.
+
+Operation-->
+
+Enqueue
+Dequeue
+Front
+size
+isEmptyQueue
+
+Application-->
+
+Operating system schedule job.
+Waiting time of customer at call center.
+Waiting in queue when online sale of mobile starts to avoid extra traffic.
+
+Implementation
+ 
+ 	Simple circular array based implementation.
+ 	Dynamic circular array based implementation.
+ 	LinkedList Implementation.
+
+ 
